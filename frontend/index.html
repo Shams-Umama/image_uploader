@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Upload</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="main-card">
+
+            <h1>AI Image Generator</h1>
+
+            <div class="upload-box">
+
+                <h2>Select Image</h2>
+
+                <input type="file" id="imageInput">
+
+                <br>
+
+                <button onclick="uploadImage()">
+                    Upload Image
+                </button>
+
+                <p id="loading"></p>
+
+                <p id="successMessage"
+                   class="success"></p>
+
+            </div>
+
+            <div id="result"></div>
+
+            <h2 class="history-title">
+                Upload History
+            </h2>
+
+            <div id="history"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
